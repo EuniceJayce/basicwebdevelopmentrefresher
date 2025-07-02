@@ -1,0 +1,30 @@
+body{
+  padding: 25px;
+  background-color: #F9F3EF;
+}
+
+.title {
+	color: white;
+	font-family:Verdana ;
+	align=center;
+	background-color:#1B3C53;
+}
+
+.container-fluid{
+  text-align: jusstify;
+  color: #1B3C53;
+}
+
+
+.line{
+  background-color:#1B3C53;
+}
+
+.dot{
+  color: #1B3C53;
+}
+
+.h1, h2, h5{
+  color: #1B3C53;
+  font-family:Verdana ;
+}
