@@ -1,8 +1,9 @@
-*{
-align-items: center;
-    display:flexbox;
-    justify-content: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 
 
 body{
@@ -249,7 +250,6 @@ body{
 /*---------------------------CARD3------------------------------------>*/
 
 .flip-card3 {
-    display: flexbox;
     background-color: transparent;
     width:270px;
     height: 383px;
@@ -360,7 +360,7 @@ body{
     line-height: 170%;
     letter-spacing: 2px;
     margin-left: 32%;
-    margin-top: -28%;
+    margin-top: -23.3%;
     font-size: 2vw;
 }
 
@@ -377,7 +377,6 @@ body{
 /*---------------------------PROJECTS------------------------------------>*/
 
 .tab{
-    display: flexbox;
     background-color: transparent;
     width:500px;
     height: 383px;
@@ -400,7 +399,7 @@ body{
     color: white;
     font-size: 2vw;
     margin-left: 40%;
-    margin-top: -1%;
+    margin-top: 3%;
 }
 
 .projectdesc2{
@@ -408,7 +407,7 @@ body{
     color: white;
     font-size: 2vw;
     margin-left: 45.5%;
-    margin-top: -2%;
+    margin-top: 1%;
 }
 
 
@@ -473,6 +472,7 @@ body{
 }
 
 .contactbox{
+ 
     margin-left: 37%;
     margin-top: 0%;
     height: 450px;
@@ -480,16 +480,32 @@ body{
 }
 
 .inputbox{
-    margin-top: -35%;
-    margin-left: 40%;
+    margin-top: -31.5%;
+    margin-left: 40.5%;
     font-family: 'Handjet';
     font-size: 2vw;
-    line-height: -10%;
+    line-height: -5px;
+}
+
+.name{
+    margin-bottom: -20px;
+    margin-top: 5px;
+}
+
+.email{
+    margin-bottom: -20px;
+    margin-top: 15px;
+}
+
+.messageme{
+    margin-bottom: -20px;
+    margin-top: 15px;
 }
 
 /*---------------------------TEXTBOXES------------------------------------>*/
 
 .nametxtbox{
+
     width: 250px;
     padding: 10px 10px;
     font-size: 16px;
@@ -500,7 +516,7 @@ body{
     outline: none;
     transition: 0.3s;
     font-family:monospace;
-    margin-top: 5px;
+    margin-top: -5px;
 
 }
 
@@ -522,7 +538,7 @@ body{
     outline: none;
     transition: 0.3s;
     font-family:monospace;
-    margin-top: 5px;
+    margin-top: -5px;
 
 }
 
@@ -535,7 +551,7 @@ body{
 
 .messagetxtbox{
     width: 250px;
-    height: 50px;
+    height: 80px;
     padding: 10px 10px;
     font-size: 12px;
     border: 1.5px solid #ffffff;
@@ -545,7 +561,7 @@ body{
     outline: none;
     transition: 0.3s;
     font-family:monospace;
-    margin-top: 5px;
+    margin-top: -5px;
 
 }
 
@@ -559,22 +575,21 @@ body{
 /*---------------------------CONTACT BUTTONS------------------------------------>*/
 
 .sendbtn {
-
-      --btn-color:#000000;
-      border: 0.25em #000000;
-      padding: 1em 3em;
-      color: #ffffff;
-      font-size: 10px;
-      font-weight: bold;
-      cursor: pointer;
-      background-color: #000000;
-      border-radius: 1em;
-      outline: none;
-      position: relative;
-      transition: all 0.3s;
-      display: block;
-      margin-left: 4%;
-      margin-top: -1%;
+    --btn-color:#000000;
+    border: 0.25em #000000;
+    padding: 1em 3em;
+    color: #ffffff;
+    font-size: 10px;
+    fpnt-weight: bold;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 1em;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    display: block;
+    margin-left: 3.5%;
+    margin-top: -1%;
 }
 
 .sendbtn::after {
@@ -620,7 +635,7 @@ body{
       position: relative;
       transition: all 0.3s;
       display: block;
-      margin-left: 19%;
+      margin-left: 18%;
       margin-top: -3.9%;
 }
 
@@ -679,7 +694,7 @@ body{
     line-height: 170%;
     letter-spacing: 2px;
     margin-left: 48%;
-    margin-top: -13%;
+    margin-top: -10.3%;
     font-size: 2vw;
 }
 
