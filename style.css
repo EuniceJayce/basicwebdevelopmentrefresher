@@ -883,14 +883,18 @@ a{
 
 /*--------------------------------GAME OVER-----------------------------*/
 
-.gameover{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15%;
-    width: 600px;
-    height: 400px;
+.gameover-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
+
+.gameover {
+  width:500px; /* adjust size as needed */
+  height: auto;
+}
+
 
 /*--------------------------------DOWNLOAD BUTTON-----------------------------*/
 
