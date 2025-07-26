@@ -865,7 +865,7 @@ a{
 
 @media (max-width: 600px) {
   .socials-row {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 }
