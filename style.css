@@ -850,23 +850,34 @@ a{
 
 /*---------------------------OTHER SOCIALS------------------------------------>*/
 
+.other-socials-container {
+  text-align: center;
+}
+
 .socials-col {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
-  text-align: left;
+  margin-top: 5%;
 }
 
 .accs, .deets {
+  font-family: 'VT323';
+  font-size: 2vw;
+  line-height: 170%;
+  letter-spacing: 2px;
   margin: 0;
+  text-align: left;
 }
-@media (max-width: 600px) {
-  .socials-col {
-    flex-direction: column;
-    align-items: center;
-  }
+
+.accs {
+  color: #FF0B55;
+}
+
+.deets {
+  color: #ffffff;
 }
 
 
