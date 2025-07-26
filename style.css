@@ -848,9 +848,9 @@ a{
       inset 0 0 0.5em 0.25em #ffffffc7;
 }
 
-/*-------------------------OTHER SOCIALS--------------------*/
+/*---------------------------OTHER SOCIALS------------------------------------>*/
 
-.socials-row {
+.socials-col {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -862,15 +862,27 @@ a{
 .accs, .deets {
   margin: 0;
 }
-
 @media (max-width: 600px) {
-  .socials-row {
-    flex-direction: row;
+  .socials-col {
+    flex-direction: column;
     align-items: center;
   }
 }
 
 
+/*--------------------------------GAME OVER-----------------------------*/
+
+.gameover-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.gameover {
+  width:500px; /* adjust size as needed */
+  height: auto;
+}
 
 
 /*--------------------------------DOWNLOAD BUTTON-----------------------------*/
