@@ -848,52 +848,29 @@ a{
       inset 0 0 0.5em 0.25em #ffffffc7;
 }
 
-/*---------------------------OTHER SOCIALS------------------------------------>*/
+/*-------------------------OTHER SOCIALS--------------------*/
 
-.othersocials{
-    font-family: 'Dokdo';
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    margin-bottom: 2%;
-    font-size: 3vw;
-}
-
-.accs{
-    font-family: 'VT323';
-    color: #FF0B55;
-    line-height: 170%;
-    letter-spacing: 2px;
-    margin-left: 35%;
-    margin-top: 5%;
-    font-size: 2vw;
-}
-
-.deets{
-    font-family: 'VT323';
-    color: #ffffff;
-    line-height: 170%;
-    letter-spacing: 2px;
-    margin-left: 48%;
-    margin-top: -10.3%;
-    font-size: 2vw;
-}
-
-
-/*--------------------------------GAME OVER-----------------------------*/
-
-.gameover-container {
+.socials-row {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 100px;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
-.gameover {
-  width:500px; /* adjust size as needed */
-  height: auto;
+.accs, .deets {
+  margin: 0;
 }
+
+@media (max-width: 600px) {
+  .socials-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 
 
 /*--------------------------------DOWNLOAD BUTTON-----------------------------*/
