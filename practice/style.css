@@ -1,0 +1,1004 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    margin: 0;
+    background: black;
+}
+
+body{
+  margin: 0;
+  color: white;   
+ 
+}
+
+.name-section {
+  height: 100vh;
+  background: linear-gradient(to bottom, #666666 0%, #000000 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-section {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+/*------------------------------SHOWSCREEN-------------------------------->*/
+
+.ptitle{
+    font-size:3vw;
+    text-align: center;
+    font-family: 'Dokdo';
+    margin-bottom: 0%;
+    color: white;
+}
+
+
+
+.fname{
+    font-size:7vw;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    color: white;
+    text-shadow: 4px 4px 0px #FF0B55;
+    margin-top: 5%;
+    margin-bottom: 15px;
+}
+
+.mytitle{
+    font-size:2vw;
+    text-align: center;
+    font-family: 'VT323';
+    margin-bottom:6%;
+    color: white;
+}
+
+/*------------------------------BUTTON-------------------------------->*/
+
+.playbtn {
+
+      --btn-color:#cf004f;
+      border: 0.25em #7c0130;
+      padding: 1em 3em;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #cf004f;
+      border-radius: 1em;
+      outline: none;
+      position: relative;
+      transition: all 0.3s;
+      display: block;
+      margin: 0 auto;
+       text-decoration: none;
+      
+}
+
+a{
+    text-decoration: none;
+      color: inherit;
+}
+
+.playbtn::after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+   
+      filter: blur(2em);
+      opacity: 0.7;
+      transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.playbtn:hover {
+      color:#7c0130;
+      background-color:  #ff3d77;
+      box-shadow: 0 0 1em 0.25em  #ff3d77,
+      inset 0 0 0.75em 0.25em  #ff3d77;
+}
+
+.playbtn:active {
+      box-shadow: 0 0 0.6em 0.25em #ff4c9163,
+      0 0 2.5em 2em #ff4c9163,
+      inset 0 0 0.5em 0.25em #ff156ec7;
+}
+
+/*------------------------------LOADING-------------------------------->*/
+
+.center-loading-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    width: 60px;
+    height: 50px;
+   
+}
+
+/*------------------------------ABOUT ME-------------------------------->*/
+
+.aboutme{
+    font-family: 'Dokdo';
+    color: #FF0B55;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 0%;
+    font-size: 6vw;
+}
+
+.desAM{
+    font-family: 'VT323';
+    color: #ffffff;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 50%;
+    margin-top: 2%;
+    font-size: 2vw;
+}
+
+.mepic{
+    display: block;
+    margin-left: 60%;   
+    margin-top: -30%;
+    margin-bottom:10% ;
+    height: 30%;
+    width: 30%;
+
+}
+
+/*------------------------------EDUCATION-------------------------------->*/
+
+.educ{
+    font-family: 'Dokdo';
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-size: 5vw;
+    color: white;
+}
+
+/*------------------------------CARDS-------------------------------->*/
+
+.flip-card {
+  background-color: transparent;
+  width: 270px;
+  height: 383px;
+  perspective: 1000px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+ 
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  backface-visibility: hidden;
+
+  
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+
+}
+
+.flip-card-back {
+  background-color: transparent;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
+
+/*---------------------------SKILLS------------------------------------>*/
+.skills{
+    font-family: 'Dokdo';
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 5vw;
+}
+
+.skills-img{
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 25%;
+    width:40%;
+    height: 40%;
+}
+
+.arrow-img1{
+    display: block;
+    margin-left: 28%;
+    margin-right: auto;
+    margin-top: 0%;
+
+    width:2%;
+    height: 2%;
+}
+
+.arrow-img2{
+    display: block;
+    margin-left: 51%;
+    margin-right: auto;
+    margin-top: 0%;
+    width:2%;
+    height: 2%;
+}
+
+.techskills{
+    font-family: 'VT323';
+    color: #cf004f;
+    margin-left: 28%;
+    margin-top: -66%;
+    font-size: 5vw;
+
+}
+
+
+.softskills{
+    font-family: 'VT323';
+    color: #cf004f;
+    margin-left: 51%;
+    margin-top: 5%;
+    font-size: 5vw;
+
+}
+
+.techdesc{
+    font-family: 'VT323';
+    color: white;
+    line-height: 170%;
+    letter-spacing: 2px;
+    margin-left: 32%;
+    margin-top: -9.5%;
+    font-size: 2vw;
+}
+
+.softdesc{
+    font-family: 'VT323';
+    color: white;
+    line-height: 170%;
+    letter-spacing: 2px;
+    margin-left: 55%;
+    margin-top: -9.5%;
+    font-size: 2vw;
+}
+
+/*---------------------------PROJECTS------------------------------------>*/
+
+.pixel-box {
+  background-image: url('images/tab.png'); /* path to your image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90vw;
+  max-width: 500px;
+  aspect-ratio: 16 / 9;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: 'Press Start 2P', monospace; /* Use a pixel/arcade font */
+  padding: 20px;
+}
+
+
+.project-title {
+    font-family: 'Handjet';
+    color: white;
+    font-size: 4.5vw;
+}
+
+.project-desc {
+    font-family: 'Handjet';
+    color: white;
+    font-size: 2vw;
+    margin-top: 2%;
+
+}
+
+.project-date {
+   font-family: 'VT323';
+    color: white;
+    font-size: 2vw;
+}
+
+
+/* Mobile scaling */
+@media screen and (max-width: 400px) {
+  .project-title { font-size: 0.9rem; }
+  .project-desc,
+  .project-date,
+  .okay-btn { font-size: 0.4rem; }
+}
+
+
+
+
+/*---------------------------OKBUTTON------------------------------------>*/
+
+.okaybtn {
+
+      --btn-color:#850e3b;
+      border: 0.25em #7c0130;
+      padding: 1em 3em;
+      color: #ffffff;
+      font-size: 10px;
+      cursor: pointer;
+      background-color: #8f1141;
+      border-radius: 1em;
+      outline: none;
+      position: relative;
+      transition: all 0.3s;
+      display: block;
+      margin-top: 2%;
+      text-decoration: none;
+
+}
+
+.okaybtn::after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      filter: blur(2em);
+      opacity: 0.7;
+      transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.okaybtn:hover {
+      color:#7c0130;
+      background-color:  #ff3d77;
+      box-shadow: 0 0 1em 0.25em  #ff3d77,
+      inset 0 0 0.75em 0.25em  #ff3d77;
+}
+
+.okaybtn:active {
+      box-shadow: 0 0 0.6em 0.25em #ff4c9163,
+      0 0 2.5em 2em #ff4c9163,
+      inset 0 0 0.5em 0.25em #ff156ec7;
+}
+
+/*---------------------------CONTACT ME------------------------------------>*/
+
+
+.contact-me{
+    font-family: 'Dokdo';
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5vw;
+    color: white;
+}
+
+.contact-box {
+  background-color: #FF0B55; 
+  border-radius: 20px;
+  padding: 2rem;
+  width: 330px;
+  height: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.inputbox{
+    margin-top: 0%;
+    margin-left: 0%;
+    font-family: 'Handjet';
+    font-size: 16px;
+    line-height: -5px;
+}
+
+.name{
+    margin-top: 5px;
+}
+
+.email{
+    margin-top: 10px;
+}
+
+.messageme{
+    margin-top: 10px;
+}
+
+/*---------------------------TEXTBOXES------------------------------------>*/
+
+.nametxtbox{
+
+    width: 250px;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: 1.5px solid #ffffff;
+    border-radius: 10px;
+    background-color:#FF0B55;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+    font-family:monospace;
+    margin-top: -5px;
+
+}
+
+.nametxtbox::placeholder{
+    color: #ffffffb2;
+    font-family:monospace;
+    font-size: 16px;
+
+}
+
+.emailtxtbox{
+    width: 250px;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: 1.5px solid #ffffff;
+    border-radius: 10px;
+    background-color:#FF0B55;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+    font-family:monospace;
+    margin-top: -5px;
+
+}
+
+.emailtxtbox::placeholder{
+    color: #ffffffb2;
+    font-family:monospace;
+    font-size: 16px;
+
+}
+
+.messagetxtbox{
+    width: 250px;
+    height: 80px;
+    padding: 10px 10px;
+    font-size: 12px;
+    border: 1.5px solid #ffffff;
+    border-radius: 10px;
+    background-color:#FF0B55;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+    font-family:monospace;
+    margin-top: -5px;
+
+}
+
+.messagetxtbox::placeholder{
+    color: #ffffffb2;
+    font-family:monospace;
+    font-size: 12px;
+
+}
+
+/*---------------------------CONTACT BUTTONS------------------------------------>*/
+
+.col{
+    display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 1rem; 
+  flex-wrap: wrap;
+}
+
+.sendbtn {
+    --btn-color:#000000;
+    border: 0.25em #000000;
+    padding: 1em 3em;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 1em;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    display: block;
+    margin-right: 15px;
+    margin-bottom: 5%;
+  
+}
+
+.sendbtn::after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      filter: blur(2em);
+      opacity: 0.7;
+      transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.sendbtn:hover {
+      color:#7c0130;
+      background-color:  #ff3d77;
+      box-shadow: 0 0 1em 0.25em  #ff3d77,
+      inset 0 0 0.75em 0.25em  #ff3d77;
+}
+
+.sendbtn:active {
+      box-shadow: 0 0 0.6em 0.25em #ff4c9163,
+      0 0 2.5em 2em #ff4c9163,
+      inset 0 0 0.5em 0.25em #ff156ec7;
+}
+
+
+.clearbtn {
+
+      --btn-color:#525252;
+      border: 0.25em #525252;
+      padding: 1em 3em;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #525252;
+      border-radius: 1em;
+      outline: none;
+      position: relative;
+      transition: all 0.3s;
+      display: block;
+      margin-right: 15px;
+      margin-bottom: 5%;
+}
+
+.clearbtn::after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      filter: blur(2em);
+      opacity: 0.7;
+      transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.clearbtn:hover {
+      color:#ffffff;
+      background-color:  #575757;
+      box-shadow: 0 0 1em 0.25em  #383838,
+      inset 0 0 0.75em 0.25em  #444444;
+}
+
+.clearbtn:active {
+      box-shadow: 0 0 0.6em 0.25em #72727263,
+      0 0 2.5em 2em #72727263,
+      inset 0 0 0.5em 0.25em #ffffffc7;
+}
+
+/*---------------------------OTHER SOCIALS------------------------------------>*/
+
+.othersocials{
+    font-family: 'Dokdo';
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size: 3vw;
+}
+
+.accs{
+    font-family: 'VT323';
+    color: #FF0B55;
+    line-height: 170%;
+    letter-spacing: 2px;
+    margin-left: 35%;
+    margin-top: 5%;
+    font-size: 2vw;
+}
+
+.deets{
+    font-family: 'VT323';
+    color: #ffffff;
+    line-height: 170%;
+    letter-spacing: 2px;
+    margin-left: 48%;
+    margin-top: -10.3%;
+    font-size: 2vw;
+}
+
+/*--------------------------COMMENTS------------------------*/
+.comment-me{
+    font-family: 'Dokdo';
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5vw;
+    color: white;
+    margin-top: 15%;
+}
+
+.comment-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+
+}
+
+
+.inputbox1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Handjet';
+    font-size: 16px;
+    line-height: -5px;
+}
+.namecomms{
+    margin-top: 5px;
+    color: #FF0B55;
+}
+
+
+.commentcomms{
+    margin-top: 10px;
+    color: #FF0B55;
+}
+
+/*---------------------------C TEXTBOXES------------------------------------>*/
+
+.Cnametxtbox{
+
+    width: 300px;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: 1.5px solid #FF0B55;
+    border-radius: 10px;
+    background-color:transparent;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+    font-family:monospace;
+    margin-top: -5px;
+
+}
+
+.Cnametxtbox::placeholder{
+    color: #ffffffb2;
+    font-family:monospace;
+    font-size: 16px;
+
+}
+
+
+.Ccommenttxtbox{
+    width: 300px;
+    height: 100px;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: 1.5px solid #FF0B55;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+    font-family:monospace;
+    margin-top: -5px;
+
+}
+
+.Ccommenttxtbox::placeholder{
+    color: #ffffffb2;
+    font-family:monospace;
+    font-size: 12px;
+
+}
+
+/*---------------------------COMMENT BUTTONS------------------------------------>*/
+
+.col1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 1rem; 
+    flex-wrap: wrap;
+}
+
+.submitbtn {
+    --btn-color:#FF0B55;
+    border: 0.25em #FF0B55;
+    padding: 1em 3em;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #FF0B55;
+    border-radius: 1em;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 5%;
+  
+}
+
+.submitbtn::after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      filter: blur(2em);
+      opacity: 0.7;
+      transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.submitbtn:hover {
+      color:#7c0130;
+      background-color:  #ff3d77;
+      box-shadow: 0 0 1em 0.25em  #ff3d77,
+      inset 0 0 0.75em 0.25em  #ff3d77;
+}
+
+.submitbtn:active {
+      box-shadow: 0 0 0.6em 0.25em #ff4c9163,
+      0 0 2.5em 2em #ff4c9163,
+      inset 0 0 0.5em 0.25em #ff156ec7;
+}
+
+
+.clearbtn {
+
+      --btn-color:#525252;
+      border: 0.25em #525252;
+      padding: 1em 3em;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #525252;
+      border-radius: 1em;
+      outline: none;
+      position: relative;
+      transition: all 0.3s;
+      display: block;
+      margin-right: 5px;
+      margin-bottom: 5%;
+}
+
+.clearbtn::after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      filter: blur(2em);
+      opacity: 0.7;
+      transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.clearbtn:hover {
+      color:#ffffff;
+      background-color:  #575757;
+      box-shadow: 0 0 1em 0.25em  #383838,
+      inset 0 0 0.75em 0.25em  #444444;
+}
+
+.clearbtn:active {
+      box-shadow: 0 0 0.6em 0.25em #72727263,
+      0 0 2.5em 2em #72727263,
+      inset 0 0 0.5em 0.25em #ffffffc7;
+}
+
+/*---------------------------OTHER SOCIALS------------------------------------>*/
+
+.othersocials{
+    font-family: 'Dokdo';
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size: 3vw;
+}
+
+.accs{
+    font-family: 'VT323';
+    color: #FF0B55;
+    line-height: 170%;
+    letter-spacing: 2px;
+    margin-left: 35%;
+    margin-top: 5%;
+    font-size: 2vw;
+}
+
+.deets{
+    font-family: 'VT323';
+    color: #ffffff;
+    line-height: 170%;
+    letter-spacing: 2px;
+    margin-left: 48%;
+    margin-top: -10.3%;
+    font-size: 2vw;
+}
+
+
+/*--------------------------------GAME OVER-----------------------------*/
+
+.gameover{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    width: 600px;
+    height: 400px;
+}
+
+/*--------------------------------DOWNLOAD BUTTON-----------------------------*/
+
+.download-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goback-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  font-family: 'Press Start 2P';
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 10px;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+}
+
+.goback-btn:hover {
+  background-color: transparent;
+  color: #FF0B55;
+
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  font-family: 'Press Start 2P';
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 10px;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+}
+
+.download-btn:hover {
+  background-color: transparent;
+  color: #FF0B55;
+
+}
+
+
+.close-tab-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  font-family: 'Press Start 2P';
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 10px;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+}
+
+.close-tab-btn:hover {
+  background-color: transparent;
+  color: #FF0B55;
+
+}
+
+
+.menu-btn {
+  display: block;
+  font-family: 'Press Start 2P';
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 2em; /* space for the triangle */
+  position: relative;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.menu-btn:hover {
+  color: #FF0B55;
+}
+
+/* Triangle appears on hover */
+.menu-btn:hover::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #FF0B55;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+/*----------------------------ALL RIGHTS RESERVED----------------------------*/
+
+.arr-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 100%;
+    height: 35px;
+}
+
+
