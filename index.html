@@ -223,7 +223,15 @@
       const message = document.getElementById('message').value;
       const commentDiv = document.createElement('div');
       commentDiv.classList.add('comment');
-      commentDiv.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+      commentDiv.innerHTML = `
+      <div class="comment-content">
+        <span class="comment-icon">🎀</span>
+        <div class="comment-text">
+          <strong>${name}</strong>
+          <p>${message}</p>
+        </div>
+      </div>
+      `;
       document.getElementById('comments').appendChild(commentDiv);
       this.reset();
     });
