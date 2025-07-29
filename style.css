@@ -848,7 +848,48 @@ a{
       inset 0 0 0.5em 0.25em #ffffffc7;
 }
 
-/*---------------------------OTHER SOCIALS------------------------------------>*/
+
+/*---------------------------COMMENTED----------------------------------------*/
+
+.comms{
+  font-family: 'Handjet';
+  text-align: center;
+  margin-top: 40px;
+}
+
+#comments {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.comment {
+  background-color: transparent;
+  padding: 10px 20px;
+  margin-top: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.comment strong {
+  margin-bottom: 8px;
+  display: inline-block;
+  background-color: transparent;
+  color: #FF0B55;
+  font-family: 'Press Start 2P';
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+}
+
+.comment p {
+  font-size: 1em;
+  color: white;
+  font-family: 'Handjet';
+}
+
+
+
+/*---------------------------OTHER SOCIALS------------------------------------*/
 
 .other-socials-container {
   text-align: center;
@@ -992,6 +1033,7 @@ a{
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
 
 
 /*----------------------------ALL RIGHTS RESERVED----------------------------*/
