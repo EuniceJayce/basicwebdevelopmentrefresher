@@ -208,6 +208,27 @@
           <input type="reset" value="Clear" class="clearbtn">
         </div>
     </form>
+
+  <h5 class="comms">Comments</h5>
+
+        <div id="comments"></div>
+  </div>
+
+
+
+  <script>
+    document.getElementById('commentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const message = document.getElementById('message').value;
+      const commentDiv = document.createElement('div');
+      commentDiv.classList.add('comment');
+      commentDiv.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+      document.getElementById('comments').appendChild(commentDiv);
+      this.reset();
+    });
+  </script>
+
   
 </div>
 
@@ -226,17 +247,24 @@
   <div class="menu">
     <a href="#start" class="menu-btn">START</a>
     <a href="files/resume.pdf" download class="menu-btn">DOWNLOAD RESUME</a>
-    <a href="javascript:void(0)" onclick="closeTab()" class="menu-btn">CLOSE TAB</a>
+    <a href="javascript:void(0)" onclick="showExitMessage()" class="menu-btn">EXIT</a>
   </div>
 </div>
 
 
-
 <script>
-  function closeTab() {
-    window.close();
+  function showExitMessage() {
+    document.body.innerHTML = `
+      <div style="background: black; color: white; font-family: 'Press Start 2P', monospace; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px;">
+        <h1 style="font-size: 3rem; color: #ff0066;" class='ty'>THANK YOU!</h1>
+        <p style="font-size: 1rem;" class='para'>I appreciate you taking the time to browse my resume website.<br><br>Hope to see you again soon!</p>
+      </div>
+    `;
+    document.title = "Thanks for Visiting!";
   }
 </script>
+
+
 
     <br>
     <br>
