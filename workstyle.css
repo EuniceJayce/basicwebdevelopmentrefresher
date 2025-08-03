@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    margin: 0;
+    background: black;
+}
+
+body{
+  margin: 0;
+  color: white;   
+ 
+}
+
+.photoedit{
+    font-family: 'Dokdo';
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.nav-tabs {
+    background-color: #000000; /* Black background for the whole tab bar */
+    border-bottom: 1px solid #FF0B55;
+}
+
+.nav-tabs .nav-link {
+    background-color: #FF0B55;  /* Gray for inactive tabs */
+    color: #ffffff;
+    border: none;
+    margin: 0 5px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #FF0B55;  /* Pink for the active tab */
+    color: #ffffff;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #790d2d; /* Optional: darker pink on hover */
+    color: #ffffff;
+}
+
